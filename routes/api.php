@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('contactos', 'ContactoController')->middleware('auth:api');
+Route::resource('contactos', 'ContactoController');
